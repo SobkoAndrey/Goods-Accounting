@@ -10,7 +10,7 @@ import UIKit
 
 class ProductCell: UITableViewCell {
     
-    let cellReuseIdentifier = "ProductCell"
+    static let cellReuseIdentifier = "ProductCell"
     
     @IBOutlet weak var productPhoto: UIImageView! {
         didSet {

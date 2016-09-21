@@ -13,6 +13,8 @@ class GoodsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.registerNib(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: ProductCell.cellReuseIdentifier)
+        tableView.allowsSelection = false
     }
 
     override func didReceiveMemoryWarning() {
