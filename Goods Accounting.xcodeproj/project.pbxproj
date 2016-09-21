@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		770B411B1D925E7300CA0A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B411A1D925E7300CA0A80 /* AppDelegate.swift */; };
-		770B411D1D925E7300CA0A80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B411C1D925E7300CA0A80 /* ViewController.swift */; };
+		770B411D1D925E7300CA0A80 /* GoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */; };
 		770B41201D925E7300CA0A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770B411E1D925E7300CA0A80 /* Main.storyboard */; };
 		770B41231D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 770B41211D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld */; };
 		770B41251D925E7300CA0A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B41241D925E7300CA0A80 /* Assets.xcassets */; };
 		770B41281D925E7300CA0A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770B41261D925E7300CA0A80 /* LaunchScreen.storyboard */; };
 		770B41331D925E7400CA0A80 /* Goods_AccountingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B41321D925E7400CA0A80 /* Goods_AccountingTests.swift */; };
 		770B413E1D925E7400CA0A80 /* Goods_AccountingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B413D1D925E7400CA0A80 /* Goods_AccountingUITests.swift */; };
+		770B414E1D92641200CA0A80 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B414D1D92641200CA0A80 /* ProductCell.xib */; };
+		770B41501D926B2D00CA0A80 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B414F1D926B2D00CA0A80 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		770B41171D925E7300CA0A80 /* Goods Accounting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goods Accounting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B411A1D925E7300CA0A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		770B411C1D925E7300CA0A80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsTableViewController.swift; sourceTree = "<group>"; };
 		770B411F1D925E7300CA0A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		770B41221D925E7300CA0A80 /* Goods_Accounting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goods_Accounting.xcdatamodel; sourceTree = "<group>"; };
 		770B41241D925E7300CA0A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		770B41391D925E7400CA0A80 /* Goods AccountingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goods AccountingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B413D1D925E7400CA0A80 /* Goods_AccountingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods_AccountingUITests.swift; sourceTree = "<group>"; };
 		770B413F1D925E7400CA0A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		770B414D1D92641200CA0A80 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		770B414F1D926B2D00CA0A80 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,9 @@
 		770B41191D925E7300CA0A80 /* Goods Accounting */ = {
 			isa = PBXGroup;
 			children = (
+				770B414C1D9263B300CA0A80 /* Views */,
+				770B414B1D92639100CA0A80 /* ViewControllers */,
 				770B411A1D925E7300CA0A80 /* AppDelegate.swift */,
-				770B411C1D925E7300CA0A80 /* ViewController.swift */,
 				770B411E1D925E7300CA0A80 /* Main.storyboard */,
 				770B41241D925E7300CA0A80 /* Assets.xcassets */,
 				770B41261D925E7300CA0A80 /* LaunchScreen.storyboard */,
@@ -126,6 +131,23 @@
 				770B413F1D925E7400CA0A80 /* Info.plist */,
 			);
 			path = "Goods AccountingUITests";
+			sourceTree = "<group>";
+		};
+		770B414B1D92639100CA0A80 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		770B414C1D9263B300CA0A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				770B414D1D92641200CA0A80 /* ProductCell.xib */,
+				770B414F1D926B2D00CA0A80 /* ProductCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770B41281D925E7300CA0A80 /* LaunchScreen.storyboard in Resources */,
+				770B414E1D92641200CA0A80 /* ProductCell.xib in Resources */,
 				770B41251D925E7300CA0A80 /* Assets.xcassets in Resources */,
 				770B41201D925E7300CA0A80 /* Main.storyboard in Resources */,
 			);
@@ -260,7 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				770B41231D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld in Sources */,
-				770B411D1D925E7300CA0A80 /* ViewController.swift in Sources */,
+				770B41501D926B2D00CA0A80 /* ProductCell.swift in Sources */,
+				770B411D1D925E7300CA0A80 /* GoodsTableViewController.swift in Sources */,
 				770B411B1D925E7300CA0A80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

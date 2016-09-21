@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="267" id="Zsf-XN-YGV" customClass="ProductCell" customModule="Goods_Accounting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="267"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zsf-XN-YGV" id="kNw-iy-9Od">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W9m-06-nkW">
+                        <rect key="frame" x="8" y="8" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="aUG-Xo-tF5"/>
+                            <constraint firstAttribute="width" constant="150" id="zSu-SU-ktL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASQ-dW-HP8">
+                        <rect key="frame" x="166" y="8" width="108" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvW-IF-90G">
+                        <rect key="frame" x="166" y="34" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-Ac-7ce">
+                        <rect key="frame" x="166" y="58" width="26" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKF-yD-TlA">
+                        <rect key="frame" x="166" y="84" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ab-61-wul">
+                        <rect key="frame" x="166" y="108" width="78" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCi-zz-ZoK">
+                        <rect key="frame" x="166" y="134" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHn-Uf-2jx">
+                        <rect key="frame" x="8" y="188" width="150" height="62"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JM8-ze-rhP"/>
+                            <constraint firstAttribute="width" constant="150" id="S4N-v0-lFg"/>
+                        </constraints>
+                        <state key="normal" title="Продано"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JM8-ze-rhP"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В наличии" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGR-qm-gP9">
+                        <rect key="frame" x="166" y="158" width="74" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-wG-z4R">
+                        <rect key="frame" x="166" y="184" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Всего" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yco-Eo-ayy">
+                        <rect key="frame" x="166" y="208" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-yD-ZRU">
+                        <rect key="frame" x="166" y="234" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yco-Eo-ayy" firstAttribute="top" secondItem="xL6-wG-z4R" secondAttribute="bottom" constant="8" symbolic="YES" id="2en-q4-Mqq"/>
+                    <constraint firstItem="kKF-yD-TlA" firstAttribute="top" secondItem="o7c-Ac-7ce" secondAttribute="bottom" constant="8" symbolic="YES" id="2lp-uN-x0K"/>
+                    <constraint firstItem="oGR-qm-gP9" firstAttribute="top" secondItem="qCi-zz-ZoK" secondAttribute="bottom" constant="8" symbolic="YES" id="37s-d0-YpD"/>
+                    <constraint firstItem="EvW-IF-90G" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="Ck7-ht-8Tf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xL6-wG-z4R" secondAttribute="trailing" constant="113" id="D2C-NE-YHL"/>
+                    <constraint firstItem="ASQ-dW-HP8" firstAttribute="top" secondItem="kNw-iy-9Od" secondAttribute="topMargin" id="D7W-aA-1oH"/>
+                    <constraint firstItem="0Ab-61-wul" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="G3C-UY-Y7Q"/>
+                    <constraint firstItem="kKF-yD-TlA" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="GsA-F8-our"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kKF-yD-TlA" secondAttribute="trailing" constant="113" id="K67-sm-7Z9"/>
+                    <constraint firstItem="qCi-zz-ZoK" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="KUR-Tg-OkD"/>
+                    <constraint firstItem="xL6-wG-z4R" firstAttribute="leading" secondItem="oGR-qm-gP9" secondAttribute="leading" id="LT0-BE-P1p"/>
+                    <constraint firstItem="ZKZ-yD-ZRU" firstAttribute="leading" secondItem="yco-Eo-ayy" secondAttribute="leading" id="Om0-X2-gwe"/>
+                    <constraint firstItem="W9m-06-nkW" firstAttribute="leading" secondItem="kNw-iy-9Od" secondAttribute="leadingMargin" id="Ri7-N6-ioY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZKZ-yD-ZRU" secondAttribute="bottom" constant="8" id="e7v-ET-ZXK"/>
+                    <constraint firstItem="o7c-Ac-7ce" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="g6i-RW-5vI"/>
+                    <constraint firstItem="W9m-06-nkW" firstAttribute="top" secondItem="kNw-iy-9Od" secondAttribute="topMargin" id="gMb-dS-0Oa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZKZ-yD-ZRU" secondAttribute="trailing" constant="113" id="hi5-kJ-Kl5"/>
+                    <constraint firstItem="0Ab-61-wul" firstAttribute="top" secondItem="kKF-yD-TlA" secondAttribute="bottom" constant="8" symbolic="YES" id="kaf-38-tiT"/>
+                    <constraint firstItem="ASQ-dW-HP8" firstAttribute="leading" secondItem="W9m-06-nkW" secondAttribute="trailing" constant="8" symbolic="YES" id="l1R-k1-tHE"/>
+                    <constraint firstItem="o7c-Ac-7ce" firstAttribute="top" secondItem="EvW-IF-90G" secondAttribute="bottom" constant="8" symbolic="YES" id="l5M-ce-AZl"/>
+                    <constraint firstItem="nHn-Uf-2jx" firstAttribute="top" secondItem="W9m-06-nkW" secondAttribute="bottom" constant="30" id="lda-eZ-zLh"/>
+                    <constraint firstItem="EvW-IF-90G" firstAttribute="top" secondItem="ASQ-dW-HP8" secondAttribute="bottom" constant="8" symbolic="YES" id="n2j-cu-daX"/>
+                    <constraint firstItem="qCi-zz-ZoK" firstAttribute="top" secondItem="0Ab-61-wul" secondAttribute="bottom" constant="8" symbolic="YES" id="s7W-C9-NHM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="EvW-IF-90G" secondAttribute="trailing" constant="113" id="sS3-f6-cTh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qCi-zz-ZoK" secondAttribute="trailing" constant="113" id="tTP-YJ-nDf"/>
+                    <constraint firstItem="ZKZ-yD-ZRU" firstAttribute="top" secondItem="yco-Eo-ayy" secondAttribute="bottom" constant="8" symbolic="YES" id="vh5-WC-HH1"/>
+                    <constraint firstItem="xL6-wG-z4R" firstAttribute="top" secondItem="oGR-qm-gP9" secondAttribute="bottom" constant="8" symbolic="YES" id="wyR-EG-Lms"/>
+                    <constraint firstItem="oGR-qm-gP9" firstAttribute="leading" secondItem="qCi-zz-ZoK" secondAttribute="leading" id="yoz-28-Bzs"/>
+                    <constraint firstItem="nHn-Uf-2jx" firstAttribute="centerX" secondItem="W9m-06-nkW" secondAttribute="centerX" id="ywN-VD-3RG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nHn-Uf-2jx" secondAttribute="bottom" constant="8" id="z6W-g5-dIn"/>
+                    <constraint firstItem="yco-Eo-ayy" firstAttribute="leading" secondItem="xL6-wG-z4R" secondAttribute="leading" id="zeZ-lI-YTG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inStockLabel" destination="xL6-wG-z4R" id="QK4-Ei-awi"/>
+                <outlet property="nameLabel" destination="EvW-IF-90G" id="ODg-rx-zs6"/>
+                <outlet property="priceLabel" destination="qCi-zz-ZoK" id="U67-Ad-88e"/>
+                <outlet property="productPhoto" destination="W9m-06-nkW" id="jxT-az-4wR"/>
+                <outlet property="sellButton" destination="nHn-Uf-2jx" id="Spo-mw-MbL"/>
+                <outlet property="totalLabel" destination="ZKZ-yD-ZRU" id="9OC-ml-Zpo"/>
+                <outlet property="typeLabel" destination="kKF-yD-TlA" id="adG-s8-g6g"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="370.5"/>
+        </tableViewCell>
+    </objects>
+</document>
