@@ -5,7 +5,18 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductViewController" customModule="Goods_Accounting" customModuleProvider="target">
+            <connections>
+                <outlet property="addPhotoButton" destination="Kuw-Y7-hZB" id="hT0-5L-TT5"/>
+                <outlet property="countTextField" destination="N6h-1i-uRx" id="F5S-jc-ipP"/>
+                <outlet property="nameTextField" destination="gIw-4G-SfX" id="maZ-k2-SpW"/>
+                <outlet property="photoImageView" destination="xDg-mV-vz7" id="3OS-Fu-eoc"/>
+                <outlet property="priceTextField" destination="meM-Bu-4vo" id="lKX-Nc-6do"/>
+                <outlet property="scrollView" destination="J8q-R0-pSS" id="Q82-Md-eKz"/>
+                <outlet property="typeTextField" destination="CMA-dK-2bK" id="crb-Ny-CcW"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1DM-sh-h5I"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -30,6 +41,9 @@
                                     <state key="normal" title=" Добавить фотографию ">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="addPhotoButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="R2c-vt-Wt1"/>
+                                    </connections>
                                 </button>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Наименование товара" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-4G-SfX">
                                     <rect key="frame" x="74" y="244" width="173" height="30"/>
@@ -94,6 +108,7 @@
                 </scrollView>
             </subviews>
             <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="J8q-R0-pSS" secondAttribute="bottom" id="0VF-0f-mgz"/>
                 <constraint firstItem="J8q-R0-pSS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NCC-5a-4y1"/>
@@ -102,6 +117,15 @@
                 <constraint firstAttribute="trailing" secondItem="J8q-R0-pSS" secondAttribute="trailing" id="pZR-EJ-JDm"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Fnw-36-sLp" appends="YES" id="Pz5-Np-MIj"/>
+            </connections>
         </view>
+        <tapGestureRecognizer id="Fnw-36-sLp">
+            <connections>
+                <action selector="tapOnView:" destination="-1" id="rGN-bO-kQC"/>
+                <outlet property="delegate" destination="-1" id="mOf-V1-Pql"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
