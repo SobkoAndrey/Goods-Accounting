@@ -11,13 +11,13 @@
 		770B411D1D925E7300CA0A80 /* GoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */; };
 		770B41231D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 770B41211D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld */; };
 		770B41251D925E7300CA0A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B41241D925E7300CA0A80 /* Assets.xcassets */; };
-		770B41281D925E7300CA0A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770B41261D925E7300CA0A80 /* LaunchScreen.storyboard */; };
 		770B41331D925E7400CA0A80 /* Goods_AccountingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B41321D925E7400CA0A80 /* Goods_AccountingTests.swift */; };
 		770B413E1D925E7400CA0A80 /* Goods_AccountingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B413D1D925E7400CA0A80 /* Goods_AccountingUITests.swift */; };
 		770B414E1D92641200CA0A80 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B414D1D92641200CA0A80 /* ProductCell.xib */; };
 		770B41501D926B2D00CA0A80 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B414F1D926B2D00CA0A80 /* ProductCell.swift */; };
 		770B41551D92DCCE00CA0A80 /* AddProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B41541D92DCCE00CA0A80 /* AddProductView.xib */; };
 		770B41571D92E42C00CA0A80 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B41561D92E42C00CA0A80 /* AddProductViewController.swift */; };
+		771CDB221D9684C60065EB25 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CDB201D9684C60065EB25 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,9 @@
 /* Begin PBXFileReference section */
 		770B41171D925E7300CA0A80 /* Goods Accounting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goods Accounting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B411A1D925E7300CA0A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsTableViewController.swift; sourceTree = "<group>"; };
+		770B411C1D925E7300CA0A80 /* GoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsTableViewController.swift; path = ViewControllers/GoodsTableViewController.swift; sourceTree = "<group>"; };
 		770B41221D925E7300CA0A80 /* Goods_Accounting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goods_Accounting.xcdatamodel; sourceTree = "<group>"; };
 		770B41241D925E7300CA0A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		770B41271D925E7300CA0A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770B41291D925E7300CA0A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770B412E1D925E7400CA0A80 /* Goods AccountingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goods AccountingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B41321D925E7400CA0A80 /* Goods_AccountingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods_AccountingTests.swift; sourceTree = "<group>"; };
@@ -51,10 +50,11 @@
 		770B41391D925E7400CA0A80 /* Goods AccountingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goods AccountingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B413D1D925E7400CA0A80 /* Goods_AccountingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods_AccountingUITests.swift; sourceTree = "<group>"; };
 		770B413F1D925E7400CA0A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		770B414D1D92641200CA0A80 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
-		770B414F1D926B2D00CA0A80 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		770B41541D92DCCE00CA0A80 /* AddProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductView.xib; sourceTree = "<group>"; };
-		770B41561D92E42C00CA0A80 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		770B414D1D92641200CA0A80 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductCell.xib; path = Views/ProductCell.xib; sourceTree = "<group>"; };
+		770B414F1D926B2D00CA0A80 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductCell.swift; path = Views/ProductCell.swift; sourceTree = "<group>"; };
+		770B41541D92DCCE00CA0A80 /* AddProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProductView.xib; path = Views/AddProductView.xib; sourceTree = "<group>"; };
+		770B41561D92E42C00CA0A80 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProductViewController.swift; path = ViewControllers/AddProductViewController.swift; sourceTree = "<group>"; };
+		771CDB201D9684C60065EB25 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +105,11 @@
 		770B41191D925E7300CA0A80 /* Goods Accounting */ = {
 			isa = PBXGroup;
 			children = (
+				771CDB1E1D9684AE0065EB25 /* Models */,
 				770B414C1D9263B300CA0A80 /* Views */,
 				770B414B1D92639100CA0A80 /* ViewControllers */,
 				770B411A1D925E7300CA0A80 /* AppDelegate.swift */,
 				770B41241D925E7300CA0A80 /* Assets.xcassets */,
-				770B41261D925E7300CA0A80 /* LaunchScreen.storyboard */,
 				770B41291D925E7300CA0A80 /* Info.plist */,
 				770B41211D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld */,
 			);
@@ -151,6 +151,14 @@
 				770B41541D92DCCE00CA0A80 /* AddProductView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		771CDB1E1D9684AE0065EB25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				771CDB201D9684C60065EB25 /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,19 +224,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Andrey Sobko";
 				TargetAttributes = {
 					770B41161D925E7300CA0A80 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = V8KSC2UZ9A;
+						LastSwiftMigration = 0800;
 					};
 					770B412D1D925E7400CA0A80 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 770B41161D925E7300CA0A80;
 					};
 					770B41381D925E7400CA0A80 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 770B41161D925E7300CA0A80;
 					};
 				};
@@ -258,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				770B41281D925E7300CA0A80 /* LaunchScreen.storyboard in Resources */,
 				770B414E1D92641200CA0A80 /* ProductCell.xib in Resources */,
 				770B41551D92DCCE00CA0A80 /* AddProductView.xib in Resources */,
 				770B41251D925E7300CA0A80 /* Assets.xcassets in Resources */,
@@ -291,6 +301,7 @@
 				770B411D1D925E7300CA0A80 /* GoodsTableViewController.swift in Sources */,
 				770B411B1D925E7300CA0A80 /* AppDelegate.swift in Sources */,
 				770B41571D92E42C00CA0A80 /* AddProductViewController.swift in Sources */,
+				771CDB221D9684C60065EB25 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,17 +336,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		770B41261D925E7300CA0A80 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				770B41271D925E7300CA0A80 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		770B41401D925E7400CA0A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -351,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -397,8 +399,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -417,6 +421,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -433,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-Accounting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -447,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-Accounting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -458,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-AccountingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goods Accounting.app/Goods Accounting";
 			};
 			name = Debug;
@@ -470,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-AccountingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goods Accounting.app/Goods Accounting";
 			};
 			name = Release;
@@ -481,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-AccountingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Goods Accounting";
 			};
 			name = Debug;
@@ -492,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.ASobko.Goods-AccountingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Goods Accounting";
 			};
 			name = Release;
