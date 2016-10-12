@@ -18,6 +18,7 @@
 		770B41551D92DCCE00CA0A80 /* AddProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B41541D92DCCE00CA0A80 /* AddProductView.xib */; };
 		770B41571D92E42C00CA0A80 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B41561D92E42C00CA0A80 /* AddProductViewController.swift */; };
 		771CDB221D9684C60065EB25 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CDB201D9684C60065EB25 /* Product.swift */; };
+		778FECEF1DAB5C5700639E86 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778FECEE1DAB5C5700639E86 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		770B41541D92DCCE00CA0A80 /* AddProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProductView.xib; path = Views/AddProductView.xib; sourceTree = "<group>"; };
 		770B41561D92E42C00CA0A80 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProductViewController.swift; path = ViewControllers/AddProductViewController.swift; sourceTree = "<group>"; };
 		771CDB201D9684C60065EB25 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		778FECEE1DAB5C5700639E86 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		770B41191D925E7300CA0A80 /* Goods Accounting */ = {
 			isa = PBXGroup;
 			children = (
+				778FECED1DAB5C3000639E86 /* Helpers */,
 				771CDB1E1D9684AE0065EB25 /* Models */,
 				770B414C1D9263B300CA0A80 /* Views */,
 				770B414B1D92639100CA0A80 /* ViewControllers */,
@@ -159,6 +162,14 @@
 				771CDB201D9684C60065EB25 /* Product.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		778FECED1DAB5C3000639E86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				778FECEE1DAB5C5700639E86 /* UIImageExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 			files = (
 				770B41231D925E7300CA0A80 /* Goods_Accounting.xcdatamodeld in Sources */,
 				770B41501D926B2D00CA0A80 /* ProductCell.swift in Sources */,
+				778FECEF1DAB5C5700639E86 /* UIImageExtension.swift in Sources */,
 				770B411D1D925E7300CA0A80 /* GoodsTableViewController.swift in Sources */,
 				770B411B1D925E7300CA0A80 /* AppDelegate.swift in Sources */,
 				770B41571D92E42C00CA0A80 /* AddProductViewController.swift in Sources */,

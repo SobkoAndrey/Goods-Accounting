@@ -9,6 +9,8 @@
 import UIKit
 
 class GoodsTableViewController: UITableViewController {
+    
+    var goods = [Product]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,20 @@ class GoodsTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return goods.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProductCell.cellReuseIdentifier, for: indexPath) as! ProductCell
+        
+        if let managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.managedObjectContext {
+            
+            
+            
+        }
+        
+        return cell
+    }
 
 }
-

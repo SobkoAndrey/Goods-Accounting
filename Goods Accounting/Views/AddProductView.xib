@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductViewController" customModule="Goods_Accounting" customModuleProvider="target">
@@ -19,17 +20,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8q-R0-pSS">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8P-MT-HEl">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDg-mV-vz7">
-                                    <rect key="frame" x="60" y="30" width="200" height="200"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="0zG-wH-l6b">
                                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
@@ -40,20 +38,18 @@
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-Y7-hZB">
-                                    <rect key="frame" x="10" y="240" width="300" height="34"/>
-                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.89328457446808507" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="300" id="fGV-Zd-pEz"/>
                                     </constraints>
                                     <state key="normal" title="  Добавить фотографию  ">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="addPhotoButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="R2c-vt-Wt1"/>
                                     </connections>
                                 </button>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Наименование товара" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-4G-SfX">
-                                    <rect key="frame" x="10" y="294" width="300" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="qRf-sg-hSb"/>
                                     </constraints>
@@ -61,7 +57,6 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Тип товара" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMA-dK-2bK">
-                                    <rect key="frame" x="10" y="334" width="300" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XDE-NR-MU7"/>
                                     </constraints>
@@ -69,7 +64,6 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Стоимость товара" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="meM-Bu-4vo">
-                                    <rect key="frame" x="10" y="374" width="300" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="300" id="hMI-PH-Jfb"/>
                                     </constraints>
@@ -77,7 +71,6 @@
                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Количество" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-1i-uRx">
-                                    <rect key="frame" x="10" y="414" width="300" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="300" id="Ku4-QN-TaZ"/>
                                     </constraints>
@@ -85,7 +78,7 @@
                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="Kuw-Y7-hZB" firstAttribute="centerX" secondItem="Y8P-MT-HEl" secondAttribute="centerX" id="0TY-gU-XMP"/>
                                 <constraint firstItem="CMA-dK-2bK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y8P-MT-HEl" secondAttribute="leading" constant="10" id="34j-q8-jFZ"/>
@@ -143,7 +136,7 @@
                     </variation>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <color key="backgroundColor" red="0.89009666442871094" green="0.89009666442871094" blue="0.89009666442871094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="J8q-R0-pSS" secondAttribute="bottom" id="0VF-0f-mgz"/>
@@ -152,7 +145,6 @@
                 <constraint firstItem="J8q-R0-pSS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a3P-d5-Mkm"/>
                 <constraint firstAttribute="trailing" secondItem="J8q-R0-pSS" secondAttribute="trailing" id="pZR-EJ-JDm"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="Fnw-36-sLp" appends="YES" id="Pz5-Np-MIj"/>
             </connections>

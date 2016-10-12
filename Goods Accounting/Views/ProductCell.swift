@@ -14,13 +14,17 @@ class ProductCell: UITableViewCell {
     
     @IBOutlet weak var productPhoto: UIImageView! {
         didSet {
+            productPhoto.layoutIfNeeded()
             productPhoto.layer.cornerRadius = productPhoto.bounds.width / 2
+            productPhoto.layer.masksToBounds = true
         }
     }
     
     @IBOutlet weak var sellButton: UIButton! {
         didSet {
+            sellButton.layoutIfNeeded()
             sellButton.layer.cornerRadius = sellButton.bounds.height / 3
+            sellButton.layer.masksToBounds = true
         }
     }
     

@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import CoreData
 
 class AddProductViewController: UIViewController {
     
+    var product: Product!
+    
+    // Elements settings.
     @IBOutlet weak var photoImageView: UIImageView! {
         didSet {
+            photoImageView.layoutIfNeeded()
             photoImageView.layer.cornerRadius = photoImageView.bounds.width / 2
+            photoImageView.layer.masksToBounds = true
         }
     }
     
     @IBOutlet weak var addPhotoButton: UIButton! {
         didSet {
+            addPhotoButton.layoutIfNeeded()
             addPhotoButton.layer.cornerRadius = addPhotoButton.bounds.height / 2
+            let imageWithColor = UIImage.fromColor(color: UIColor(red: 0xFFp-8, green: 0x7Fp-8, blue: 0x00p-8, alpha: 0.89))
+            addPhotoButton.setBackgroundImage(imageWithColor, for: .normal)
+            addPhotoButton.layer.masksToBounds = true
+            
         }
     }
     
@@ -41,7 +52,34 @@ class AddProductViewController: UIViewController {
         }
     }
     
-    // MARK: - Keyboard
+    // MARK: - Product creating.
+    
+    func addProduct(_ sender: AnyObject?) {
+        if let managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.managedObjectContext {
+            product = NSEntityDescription.insertNewObject(forEntityName: "Product", into: managedObjectContext) as! Product
+            
+            product.name = nameTextField.text!
+            product.type = typeTextField.text!
+            product.price = NSNumber(value: Int(priceTextField.text!)!)
+            
+            product.inStock = NSNumber(value: Int(countTextField.text!)!)
+            product.totalCount = NSNumber(value: Int(countTextField.text!)!)
+            product.sold = NSNumber(value: Int(countTextField.text!)!)
+            
+            if let productImage = photoImageView.image {
+                product.image = UIImagePNGRepresentation(productImage)
+            }
+            
+            do {
+                try managedObjectContext.save()
+            } catch {
+                print(error)
+            }
+            
+        }
+    }
+    
+    // MARK: - Keyboard.
     
     @IBAction func tapOnView(_ sender: AnyObject?) {
         // Remove keyboard.
@@ -90,6 +128,9 @@ class AddProductViewController: UIViewController {
         super.viewDidLoad()
         
         registerForKeyboardNotifications()
+        
+        navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self,
+                                                                                  action: #selector(addProduct(_:)))
     }
 }
 
