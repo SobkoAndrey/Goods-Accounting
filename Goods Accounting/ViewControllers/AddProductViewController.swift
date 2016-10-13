@@ -79,6 +79,10 @@ class AddProductViewController: UIViewController {
         }
     }
     
+    func cancel() {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Keyboard.
     
     @IBAction func tapOnView(_ sender: AnyObject?) {
@@ -129,8 +133,16 @@ class AddProductViewController: UIViewController {
         
         registerForKeyboardNotifications()
         
-        navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self,
-                                                                                  action: #selector(addProduct(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .add,
+            target: self,
+            action: #selector(addProduct(_:)))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .cancel,
+            target: self,
+            action: #selector(cancel))
+        
     }
 }
 

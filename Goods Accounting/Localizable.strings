@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Goods Accounting
+
+  Created by Andrey Sobko on 13.10.16.
+  Copyright © 2016 Andrey Sobko. All rights reserved.
+*/
+
+"In stock: " = "В наличии: ";
+"Total: " = "Всего: ";
+"Sold: " = "Продано: ";
